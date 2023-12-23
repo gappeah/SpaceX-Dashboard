@@ -16,8 +16,8 @@ def fetch_spacex_lauches():
     else:
         return[]
     
-lauches = fetch_spacex_lauches
-print(lauches[0])
+launches = fetch_spacex_lauches()
+print(launches[0])
 
 
 
