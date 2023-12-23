@@ -17,14 +17,14 @@ def fetch_spacex_launches():
         return[]  
     
 def category(Launches):
-    success = list(filter(Launches, lambda x: x['launch success'] and not x ["upcoming"]))
-    failed = list(filter(Launches, lambda x: not x['launch failed'] and not x ["upcoming"]))
-    upcoming = list(filter(Launches, lambda x: x ["upcoming"]))
-    
+    success = list(filter(lambda x: x['launch success'] and not x ["upcoming"], launches))
+    failed = list(filter(lambda x: not x['launch failed'] and not x ["upcoming"], launches))
+    upcoming = list(filter(lambda x: x ["upcoming"], launches))
 
+    return {'success': success, 'failed': failed, 'upcoming': upcoming}
     
-launches = fetch_spacex_launches()
-
+launches = category(fetch_spacex_launches())
+print(launches)
 
 
 
