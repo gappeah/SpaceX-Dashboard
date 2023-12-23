@@ -6,9 +6,18 @@ app = Flask(__name__)
 
 @app.route('/')
 def index():
-    return "Hello World! changed"
+    return render_template('index.html')
 
-
+def fetch_spacex_lauches():
+    url = 'https://api.spacexdata.com/v4/launches'
+    response = requests.get(url)
+    if response.status_code == 200:
+        return response.json()
+    else:
+        return[]
+    
+lauches = fetch_spacex_lauches
+print(lauches[0])
 
 
 
