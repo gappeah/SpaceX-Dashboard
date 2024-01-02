@@ -36,3 +36,8 @@ https://github.com/gappeah/Visualizing-SpaceX/assets/114095068/572239e0-eb93-4d2
 * launch_card.html: Template for individual launch cards.
 * static/css/: Directory containing CSS stylesheets.
 * styles.css: Custom CSS styles for the application.
+
+
+## Updates
+* Website is current;y offline and will be redeployed online soon.
+  
