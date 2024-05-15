@@ -1,6 +1,6 @@
 # SpaceX Launches Visual Dashboard
 
-This web application visualises past and upcoming SpaceX launches, categorizing them into successful, failed, and upcoming missions. Now launched on Google Cloud, it fetches data from the SpaceX API and displays it in an interactive format.
+This web application visualises past and upcoming SpaceX launches, categorising them into successful, failed, and upcoming missions using the SpaceX API.
 
 ## Features
 * Categorized launches: View successful, failed, and upcoming launches separately.
